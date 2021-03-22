@@ -8,6 +8,7 @@ use Models\User;
 use Models\Person;
 use Models\Ticket_purchase_history;
 use \Illuminate\pagination\Paginator;
+use Illuminate\Database\Capsule\Manager as DB;
 class APIController extends Controller {
     
     /**

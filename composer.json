@@ -26,7 +26,8 @@
             "Controllers\\": "Controllers/",
             "Auth\\": "Auth/",
             "Routes\\": "routes/",
-            "Repositories\\": "Repositories/"
+            "Repositories\\": "Repositories/",
+            "Config\\": "Config/"
         }
     }
 }
