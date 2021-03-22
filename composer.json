@@ -1,0 +1,32 @@
+{
+    "name": "owner/awsapps",
+    "description": "awsapp created by Ebenezer Oladimeji Awotoro",
+    "require": {
+        "illuminate/database": "^7.3",
+        "unicodeveloper/laravel-paystack": "^1.0",
+        "klein/klein": "^2.1",
+        "firebase/php-jwt": "^5.2",
+        "larapack/dd": "1.*",
+        "illuminate/http": "7.3",
+        "illuminate/validation": "7.3",
+        "illuminate/pagination": "7.3",
+        "zircote/swagger-php": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "Ebezer",
+            "email": "Ebenco94@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "Models"
+         ],
+         "psr-4": {
+            "Controllers\\": "Controllers/",
+            "Auth\\": "Auth/",
+            "Routes\\": "routes/",
+            "Repositories\\": "Repositories/"
+        }
+    }
+}
