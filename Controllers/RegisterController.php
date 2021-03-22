@@ -50,7 +50,7 @@ class RegisterController extends Controller{
         $validator = ValidatorFactory::Validator($request->all(), $rules, $messages);
         
         if ($validator->fails()){
-			return response()->json(['error'=>$validator->errors()], 422);
+			return json_encode(['error'=>$validator->errors()], 422);
         }
         try {
             $checkIfUserExist = User::where('email', $request->email)->first();

@@ -33,7 +33,7 @@ class LoginController extends Controller{
         $validator = ValidatorFactory::Validator($request->all(), $rules, $messages);
         
         if ($validator->fails()){
-            return response()->json(['error'=>$validator->errors()], 422);
+            return json_encode(['error'=>$validator->errors()], 422);
         }
         $pepper = "c1isvFdxMDdmjOlvxpecFw";
         $pwd = $request->password;
